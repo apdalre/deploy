@@ -18,10 +18,10 @@ def fuzzy_cmeans_clustering(data, n_clusters):
 def create_connection():
     try:
         connection = mysql.connector.connect(
-            host='localhost',  # Ganti dengan alamat IP server database
-            database='hasil_klaster',
-            user='root',
-            password=''
+            host='sql12.freesqldatabase.com',  # Ganti dengan alamat IP server database
+            database='sql12711336',
+            user='sql12711336',
+            password='ufDVxditnx'
         )
         if connection.is_connected():
             st.write("Koneksi ke database berhasil.")
