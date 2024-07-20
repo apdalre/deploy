@@ -109,7 +109,7 @@ def fetch_data():
 # Inisialisasi halaman Streamlit
 st.title('Aplikasi Klasterisasi Data Pasien dengan Fuzzy C-Means Clustering')
 
-menu = st.sidebar.selectbox('Menu', options=['Input Data', 'Lihat Hasil Klaster', 'Lihat Nilai Klaster'])
+menu = st.sidebar.selectbox('Menu', options=['Input Data', 'Lihat Hasil Klaster'])
 
 # Halaman Input Data
 if menu == 'Input Data':
