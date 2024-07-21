@@ -19,9 +19,9 @@ def create_connection():
     try:
         connection = mysql.connector.connect(
             host='sql12.freesqldatabase.com',  # Ganti dengan alamat IP server database
-            database='sql12711336',
-            user='sql12711336',
-            password='ufDVxditnx'
+            database='sql12721187',
+            user='sql12721187',
+            password='wMAju6LHZZ'
         )
         if connection.is_connected():
             st.write("Koneksi ke database berhasil.")
@@ -67,7 +67,7 @@ def fetch_data():
         connection = create_connection()
         if connection and connection.is_connected():
             cursor = connection.cursor()
-            cursor.execute("SELECT `BMI`, `Sistolik`, `Diastolik`, `Hba1C`, `Gula_Darah_2_Jam_PP`, `Gula_Darah_Acak`, `Gula_Darah_Puasa`, `Usia`, `Klaster` FROM `hasil_klaster`")
+            cursor.execute("SELECT BMI, Sistolik, Diastolik, Hba1C, Gula_Darah_2_Jam_PP, Gula_Darah_Acak, Gula_Darah_Puasa, Usia, Klaster FROM hasil_klaster")
             data = cursor.fetchall()
             
             if data:
